@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/mercusa/stable(/|$)
+RewriteRule (.*) /mercusa/stable/$1 [L]
